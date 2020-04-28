@@ -42,6 +42,44 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 				tutoring at a local middle school. I learned a lot from being around my community and the experiences I had and am truly blessed for all the events that has happened in my life. I knew that I wanted
 			to futher represent my community and my city, and I knew the best way to do so was going to the best university. Currently, I am now studying at UC Berkeley in where I continue to learn more about myself
 		and others while also representing my community and showing that despite circumstances, we can do anything we put our minds into it. Below are some highlights or random memories I want to share! Thank you.</p>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+
+<h2 class="w3-center">Moments Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="images/IMG_2054.PNG" style="width:100%">
+  <img class="mySlides" src="images/DSC_0023.JPG" style="width:100%">
+  <img class="mySlides" src="images/IMG_1596.JPG"" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
 
 								<section>
 									<header class="major">
